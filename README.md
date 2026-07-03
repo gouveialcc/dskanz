@@ -45,22 +45,19 @@ git clone [https://github.com/gouveialcc/dskanz.git)
 cd dskanz
 
 2. Atribuir permissão de execução
-chmod +x analisador_dskanz.sh
+chmod +x dskanz.sh
 
 3. Modos de Uso
 Varredura Completa do Sistema (Raiz /):
-sudo ./analisador_dskanz.sh
+sudo ./dskanz.sh /
 
 Varredura de Diretório Específico (Ex: /var):
-sudo ./analisador_dskanz.sh /var
+sudo ./dskanz.sh /var
 
 📂 Estrutura de Logs Gerada
 Ao aceitar a geração do relatório ao final do processo, a ferramenta criará o arquivo padronizado no seguinte formato:
-
 Diretório: /var/log/dskanz/ (Se o script não tiver permissão de escrita local, gerará na pasta atual do script).
-
 Nome do arquivo: dskanz_audit_[caminho_analisado]_[data_hora].log
-
 Exemplo: /var/log/dskanz/dskanz_audit__var_log_20260703_084512.log
 
 💙 Apoie este Projeto Open Source
